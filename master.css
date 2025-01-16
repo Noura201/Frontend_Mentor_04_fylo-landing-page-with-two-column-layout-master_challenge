@@ -1,0 +1,1922 @@
+@font-face {
+  font-family: "OpenSans-VariableFont";
+  src: url("fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("fonts/Open_Sans/static/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("fonts/Open_Sans/static/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Raleway-VariableFont";
+  src: url("fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("fonts/Raleway/static/Raleway-Bold.ttf");
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+main {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 16px;
+  font-weight: 400;
+}
+main,
+footer {
+  width: calc(min(90rem, 100%));
+}
+body {
+  height: 100%;
+}
+nav p {
+  text-transform: capitalize;
+  color: hsl(243, 87%, 12%);
+  font-family: "Raleway-VariableFont";
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec1 {
+  display: flex;
+  justify-content: center;
+}
+.sec1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sec1 .txt-div {
+  color: hsl(243, 87%, 12%);
+}
+.sec1 .txt-div p {
+  font-family: "OpenSans-VariableFont";
+}
+.sec1 .txt-div form,
+.sec3 .input-div form {
+  display: flex;
+}
+.sec1 .txt-div input,
+.sec3 .input-div input {
+  color: #000;
+  background-color: white;
+}
+.sec1 .txt-div input::placeholder,
+.sec3 .input-div input::placeholder {
+  color: hsl(0, 0%, 75%);
+  letter-spacing: 0.02em;
+  font-family: "Raleway-VariableFont";
+}
+.sec1 .txt-div button,
+.sec3 .input-div button {
+  text-transform: capitalize;
+  font-family: "Raleway-VariableFont";
+  font-weight: 600;
+  color: white;
+  border-color: transparent;
+  background-color: hsl(224, 93%, 58%);
+}
+.sec1 .txt-div input:hover,
+.sec1 .txt-div button:hover,
+.sec3 .input-div input:hover,
+.sec3 .input-div button:hover {
+  cursor: pointer;
+}
+.sec1 .txt-div button:hover,
+.sec3 .input-div button:hover {
+  background-color: hsl(224, 100%, 74%);
+}
+.sec1 .txt-div input:invalid:not(:focus):not(:placeholder-shown),
+.sec3 .input-div input:invalid:not(:focus):not(:placeholder-shown) {
+  border: 1.5px solid #8a114db0;
+}
+.sec1 .txt-div .error-msg,
+.sec3 .input-div .error-msg {
+  visibility: hidden;
+  color: #8a114db0;
+  font-family: "OpenSans-VariableFont";
+}
+.sec1 .txt-div input:invalid:not(:focus):not(:placeholder-shown) + .error-msg,
+.sec3
+  .input-div
+  input:invalid:not(:focus):not(:placeholder-shown)
+  + .error-msg {
+  visibility: visible;
+}
+.sec2 {
+  display: flex;
+  flex-direction: column;
+}
+.sec2 .bottom-section {
+  background-color: hsl(240, 75%, 98%);
+}
+.sec2 .bottom-section .txt-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.sec2 .bottom-section .txt-div h1 {
+  font-family: "Raleway-Bold";
+  color: hsl(243, 87%, 12%);
+}
+.sec2 .bottom-section .txt-div p {
+  font-family: "OpenSans-VariableFont";
+}
+.sec2 .bottom-section .txt-div .link-div {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.sec2 .bottom-section .txt-div .link-div .txt-link {
+  color: hsl(170, 45%, 43%);
+  text-decoration: none;
+  font-family: "OpenSans-VariableFont";
+}
+.sec2 .bottom-section .txt-div .link-div:hover {
+  cursor: pointer;
+  filter: brightness(130%);
+}
+.sec2 .bottom-section .txt-div .quote-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 8px;
+  background-color: white;
+}
+.sec2 .bottom-section .txt-div .quote-div .icon-quote {
+  margin-bottom: 10px;
+}
+.sec2 .bottom-section .txt-div .quote-div p {
+  color: hsl(243, 87%, 12%);
+}
+.sec2 .bottom-section .txt-div .quote-div .avatar-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.sec2 .bottom-section .txt-div .quote-div .avatar-img {
+  border-radius: 50%;
+}
+.sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div h3,
+p {
+  margin: 0;
+}
+.sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div span {
+  text-transform: uppercase;
+}
+.sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div h3 {
+  font-family: "OpenSans-Bold";
+}
+.sec3 {
+  display: flex;
+  background-color: hsl(238, 22%, 44%);
+}
+.sec3 .txt-div,
+.input-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sec3 .txt-div {
+  color: hsl(240, 75%, 98%);
+}
+.sec3 .txt-div h2 {
+  font-weight: 640;
+  font-family: "Raleway-VariableFont";
+}
+.sec3 .txt-div p {
+  font-family: "OpenSans-VariableFont";
+}
+.sec3 .input-div input,
+button {
+  border-radius: 3px;
+}
+.sec3 .input-div input {
+  border: none;
+}
+.sec3 .input-div .error-msg {
+  color: hsl(240, 75%, 98%);
+}
+.sec1 .txt-div input:invalid:not(:focus):not(:placeholder-shown) + .error-msg {
+  margin-bottom: 15px;
+}
+.sec3
+  .input-div
+  input:invalid:not(:focus):not(:placeholder-shown)
+  + .error-msg {
+  margin-bottom: 15px;
+}
+footer {
+  background-color: hsl(243, 87%, 12%);
+}
+/* ==================================================================================================================================== */
+/* 
+Common Properties
+Mobile & Tablet [320px + 375px + 425px + 750px]
+*/
+@media (max-width: 1023px) {
+  .sec1 {
+    flex-direction: column;
+  }
+  .sec1 div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec1 .txt-div form {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sec1 .txt-div {
+    text-align: center;
+    margin: 50px 0;
+  }
+  .sec1 .txt-div h1 {
+    line-height: 150%;
+    font-family: "OpenSans-Bold";
+  }
+  .sec1 .txt-div p {
+    line-height: 140%;
+    margin-top: 15px;
+    margin-bottom: 60px;
+  }
+  .sec1 .txt-div input,
+  .sec1 .txt-div button {
+    align-self: center;
+    border-radius: 6px;
+  }
+  .sec1 .txt-div input {
+    border: 1.5px solid hsl(238, 22%, 44%);
+    font-family: "OpenSans-VariableFont";
+  }
+  .sec1 .txt-div button {
+    margin-top: 3px;
+  }
+  .sec1 .txt-div .error-msg {
+    padding-top: 3px;
+  }
+  .sec2 .top-section .sec2-bg-mobile {
+    width: 100%;
+    display: block;
+  }
+  .sec2 .top-section .sec2-bg-desktop {
+    display: none;
+  }
+  .sec2 .bottom-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .sec2 .bottom-section .img-div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .sec2 .bottom-section .img-div img {
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+  .sec2 .bottom-section .txt-div h1 {
+    align-self: center;
+  }
+  .sec2 .bottom-section .txt-div p {
+    align-self: flex-start;
+    color: hsl(238, 22%, 44%);
+  }
+  .sec2 .bottom-section .txt-div .link-div {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+  }
+  .sec2 .bottom-section .txt-div .link-div .txt-link {
+    padding-bottom: 12px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div p {
+    padding: 0;
+    line-height: 180%;
+    letter-spacing: 0.8px;
+  }
+  .sec3 {
+    flex-direction: column;
+  }
+  .sec3 .txt-div,
+  .input-div {
+    align-items: center;
+  }
+  .sec3 .txt-div p {
+    line-height: 160%;
+    letter-spacing: 0.6px;
+  }
+  .sec3 .txt-div {
+    text-align: center;
+  }
+  .sec3 .input-div form {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec3 .input-div form .error-msg {
+    align-self: flex-start;
+  }
+  .sec3 .input-div button {
+    letter-spacing: 0.7px;
+  }
+  footer {
+    color: hsl(240, 75%, 98%);
+    display: flex;
+    flex-direction: column;
+    font-family: "OpenSans-VariableFont";
+  }
+  footer .phone-div,
+  .email-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  footer .final-footer-div {
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .final-footer-div .div1,
+  .div2 {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .final-footer-div .div1 a,
+  .div2 a {
+    align-self: flex-start;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: hsl(240, 75%, 98%);
+  }
+  footer .final-footer-div .div1 a:hover,
+  footer .final-footer-div .div2 a:hover {
+    color: hsl(238, 62%, 74%);
+  }
+  footer .footer-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+  }
+  footer .footer-logo .facebook-div,
+  .twitter-div {
+    margin-right: 15px;
+  }
+  footer .footer-logo div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1.5px solid hsl(240, 75%, 98%);
+  }
+  footer .footer-logo div a {
+    margin: 5px auto;
+  }
+  footer .footer-logo div:hover {
+    cursor: pointer;
+    border-color: hsl(238, 62%, 74%);
+  }
+  footer .footer-logo div path:hover {
+    fill: hsl(238, 62%, 74%);
+  }
+}
+/* ==================================================================================================================================== */
+/* 
+Common Properties
+Mobile [320px + 375px + 425px]
+*/
+@media (max-width: 749px) {
+  body {
+    padding: 0;
+  }
+  nav {
+    padding: 30px 20px 0;
+  }
+  .sec1 {
+    padding: 0 20px;
+  }
+  .sec1 .txt-div .error-msg {
+    padding-left: 10px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div p {
+    margin-top: 3px;
+  }
+}
+/* ==================================================================================================================================== */
+/* Mobile Small - 320px */
+@media (max-width: 374px) {
+  nav {
+    padding: 15px 10px 0;
+  }
+  nav img {
+    width: 11%;
+  }
+  nav p {
+    font-size: 5px;
+  }
+  nav .para1 {
+    padding-left: 60%;
+  }
+  nav .para3 {
+    padding-right: 2%;
+  }
+  .sec1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .sec1 .img-div img {
+    width: 46%;
+  }
+  .sec1 .txt-div h1 {
+    font-size: 10px;
+    padding: 0 25%;
+    margin-top: -20px;
+    margin-bottom: -3px;
+  }
+  .sec1 .txt-div p {
+    padding: 0 28%;
+    margin-bottom: 15px;
+    font-size: 6px;
+  }
+  .sec1 .txt-div input {
+    width: 52%;
+    height: 15px;
+    padding: 12px;
+    font-size: 6px;
+  }
+  .sec1 .txt-div input::placeholder {
+    font-size: 6px;
+  }
+  .sec1 .txt-div .error-msg {
+    font-size: 6px;
+    align-self: flex-start;
+    padding-left: 25%;
+  }
+  .sec1 .txt-div button {
+    width: 52%;
+    height: 25px;
+    font-size: 6px;
+  }
+  .sec1
+    .txt-div
+    input:invalid:not(:focus):not(:placeholder-shown)
+    + .error-msg {
+    margin-bottom: 7px;
+  }
+  .sec2 .bottom-section {
+    height: 500px;
+  }
+  .sec2 .bottom-section .img-div img {
+    width: 46%;
+  }
+  .sec2 .bottom-section .txt-div h1 {
+    margin-top: -40px;
+    font-size: 7px;
+  }
+  .sec2 .bottom-section .txt-div p {
+    padding: 5px 30%;
+    font-size: 6px;
+  }
+  .sec2 .bottom-section .txt-div .link-div {
+    margin-top: -40px;
+    margin-bottom: -60px;
+  }
+  .sec2 .bottom-section .txt-div .link-div .txt-link {
+    font-size: 5px;
+    margin-bottom: -20px;
+  }
+  .sec2 .bottom-section .txt-div .link-div a .icon-arrow {
+    width: 6px;
+    height: 6px;
+    margin-left: 2px;
+    margin-right: -2px;
+    margin-bottom: -2px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div {
+    width: 175px;
+    height: 90px;
+    margin: 85px auto;
+    padding: 15px 10px 15px 15px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .icon-quote {
+    width: 6px;
+    height: 8px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div p {
+    font-size: 5px;
+    margin-top: -15px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div {
+    margin-top: 8px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-img {
+    width: 10px;
+    height: 10px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div {
+    margin-left: 5px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div h3 {
+    font-size: 4px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div p {
+    font-size: 3.2px;
+    font-weight: 500;
+    margin-top: 0.1px;
+  }
+  .sec3 {
+    padding: 20px 60px;
+    height: 215px;
+  }
+  .sec3 .txt-div h2 {
+    padding-bottom: 3px;
+    font-size: 8px;
+  }
+  .sec3 .txt-div p {
+    padding: 0 16%;
+    font-size: 6px;
+  }
+  .sec3 .input-div input {
+    width: 160px;
+    max-width: 160px;
+    padding: 7px;
+    font-size: 6px;
+  }
+  .sec3 .input-div input::placeholder {
+    font-size: 6px;
+  }
+  .sec3 .input-div .error-msg {
+    font-size: 6px;
+    align-self: flex-start;
+  }
+  .sec3 .input-div button {
+    width: 160px;
+    height: 22px;
+    font-size: 6px;
+  }
+  .sec3
+    .input-div
+    input:invalid:not(:focus):not(:placeholder-shown)
+    + .error-msg {
+    margin-bottom: 8px;
+  }
+  footer {
+    height: 380px;
+    padding: 30px 20px;
+  }
+  footer .footer-logo-mobile {
+    width: 18%;
+  }
+  footer .phone-div,
+  .email-div {
+    margin-left: 5px;
+  }
+  footer .phone-div {
+    margin-top: 20px;
+  }
+  footer .email-div {
+    margin-top: 10px;
+  }
+  footer .phone-div .icon-phone,
+  .icon-email {
+    width: 12px;
+    height: 10px;
+  }
+  footer .phone-div .phone-para,
+  .email-div .email-para {
+    margin-left: 10px;
+    font-size: 8px;
+  }
+  footer .final-footer-div {
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+  footer .final-footer-div div a {
+    font-size: 8px;
+    margin-bottom: 10px;
+  }
+  footer .final-footer-div .div2 .contact-us-para {
+    margin-top: 15px;
+  }
+  footer .footer-logo div {
+    width: 20px;
+    height: 20px;
+  }
+  footer .footer-logo .facebook-div a {
+    width: 5px;
+    height: 5px;
+    margin-top: 4px;
+  }
+  footer .footer-logo .twitter-div a {
+    width: 8px;
+    height: 8px;
+    margin-top: 4px;
+  }
+  footer .footer-logo .instagram-div a {
+    width: 12px;
+    height: 12px;
+    margin-top: 2.5px;
+  }
+}
+/* ==================================================================================================================================== */
+/* Mobile Medium - 375px */
+@media (min-width: 375px) and (max-width: 424px) {
+  nav {
+    padding: 20px 10px 0;
+  }
+  nav img {
+    width: 12%;
+  }
+  nav p {
+    font-size: 6px;
+  }
+  nav .para1 {
+    padding-left: 60%;
+  }
+  nav .para3 {
+    padding-right: 2%;
+  }
+  .sec1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .sec1 .img-div img {
+    width: 48%;
+  }
+  .sec1 .txt-div h1 {
+    font-size: 10.5px;
+    padding: 0 25%;
+    margin-top: -20px;
+    margin-bottom: -3px;
+  }
+  .sec1 .txt-div p {
+    padding: 0 28%;
+    margin-bottom: 15px;
+    font-size: 7px;
+  }
+  .sec1 .txt-div input {
+    width: 54%;
+    height: 15px;
+    padding: 12px;
+    font-size: 6px;
+  }
+  .sec1 .txt-div input::placeholder {
+    font-size: 7px;
+  }
+  .sec1 .txt-div .error-msg {
+    font-size: 7px;
+    align-self: flex-start;
+    padding-left: 23%;
+  }
+  .sec1 .txt-div button {
+    width: 54%;
+    height: 25px;
+    font-size: 6px;
+  }
+  .sec2 .bottom-section {
+    height: 550px;
+  }
+  .sec2 .bottom-section .img-div img {
+    width: 48%;
+  }
+  .sec2 .bottom-section .txt-div h1 {
+    margin-top: -40px;
+    font-size: 8px;
+  }
+  .sec2 .bottom-section .txt-div p {
+    padding: 5px 30%;
+    font-size: 7px;
+  }
+  .sec2 .bottom-section .txt-div .link-div {
+    margin-top: -40px;
+    margin-bottom: -60px;
+  }
+  .sec2 .bottom-section .txt-div .link-div .txt-link {
+    font-size: 5.5px;
+    margin-bottom: -20px;
+  }
+  .sec2 .bottom-section .txt-div .link-div a .icon-arrow {
+    width: 7px;
+    height: 7px;
+    margin-left: 2px;
+    margin-right: -2px;
+    margin-bottom: -2px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div {
+    width: 190px;
+    height: 100px;
+    margin: 85px auto;
+    padding: 15px 5px 15px 15px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .icon-quote {
+    width: 7px;
+    height: 9px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div p {
+    font-size: 6px;
+    margin-top: -15px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div {
+    margin-top: 8px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-img {
+    width: 13px;
+    height: 13px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div {
+    margin-left: 5px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div h3 {
+    font-size: 4.5px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div p {
+    font-size: 3.5px;
+    font-weight: 500;
+    margin-top: 0.5px;
+  }
+  .sec3 {
+    padding: 20px 60px;
+    height: 250px;
+  }
+  .sec3 .txt-div h2 {
+    padding-bottom: 3px;
+    font-size: 9px;
+  }
+  .sec3 .txt-div p {
+    padding: 0 16%;
+    font-size: 7px;
+  }
+  .sec3 .input-div input {
+    width: 165px;
+    max-width: 165px;
+    padding: 7px;
+    font-size: 7px;
+  }
+  .sec3 .input-div input::placeholder {
+    font-size: 7px;
+  }
+  .sec3 .input-div .error-msg {
+    font-size: 7px;
+    align-self: flex-start;
+  }
+  .sec3 .input-div button {
+    width: 165px;
+    height: 22px;
+    font-size: 6px;
+  }
+  .sec3
+    .input-div
+    input:invalid:not(:focus):not(:placeholder-shown)
+    + .error-msg {
+    margin-bottom: 8px;
+  }
+  footer {
+    height: 420px;
+    padding: 30px 20px;
+  }
+  footer .footer-logo-mobile {
+    width: 20%;
+  }
+  footer .phone-div,
+  .email-div {
+    margin-left: 5px;
+  }
+  footer .phone-div {
+    margin-top: 20px;
+  }
+  footer .email-div {
+    margin-top: 10px;
+  }
+  footer .phone-div .icon-phone,
+  .icon-email {
+    width: 13px;
+    height: 11px;
+  }
+  footer .phone-div .phone-para,
+  .email-div .email-para {
+    margin-left: 10px;
+    font-size: 9px;
+  }
+  footer .final-footer-div {
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+  footer .final-footer-div div a {
+    font-size: 9px;
+    margin-bottom: 10px;
+  }
+  footer .final-footer-div .div2 .contact-us-para {
+    margin-top: 15px;
+  }
+  footer .footer-logo div {
+    width: 22px;
+    height: 22px;
+  }
+  footer .footer-logo .facebook-div a {
+    width: 6px;
+    height: 6px;
+    margin-top: 5px;
+  }
+  footer .footer-logo .twitter-div a {
+    width: 9px;
+    height: 9px;
+    margin-top: 5px;
+  }
+  footer .footer-logo .instagram-div a {
+    width: 13px;
+    height: 13px;
+    margin-top: 3.2px;
+  }
+}
+/* ==================================================================================================================================== */
+/* Mobile Large - 425px */
+@media (min-width: 425px) and (max-width: 749px) {
+  nav img {
+    width: 80px;
+  }
+  nav img {
+    width: 12%;
+  }
+  nav p {
+    font-size: 12px;
+  }
+  nav .para1 {
+    padding-left: 45%;
+  }
+  nav .para3 {
+    padding-right: 2%;
+  }
+  .sec1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .sec1 .img-div img {
+    width: 48%;
+  }
+  .sec1 .txt-div h1 {
+    font-size: 22px;
+    padding: 20px 25% 0;
+  }
+  .sec1 .txt-div p {
+    padding: 5px 28%;
+    font-size: 13px;
+  }
+  .sec1 .txt-div input {
+    width: 53%;
+    height: 20px;
+    padding: 20px;
+    font-size: 11px;
+  }
+  .sec1 .txt-div input::placeholder {
+    font-size: 11px;
+  }
+  .sec1 .txt-div .error-msg {
+    font-size: 11px;
+    align-self: flex-start;
+    padding-left: 23.5%;
+  }
+  .sec1 .txt-div button {
+    width: 53%;
+    height: 42px;
+    font-size: 13px;
+  }
+  .sec2 .bottom-section {
+    height: 1000px;
+  }
+  .sec2 .bottom-section .img-div img {
+    width: 48%;
+  }
+  .sec2 .bottom-section .txt-div h1 {
+    padding-top: 20px;
+    font-size: 15px;
+  }
+  .sec2 .bottom-section .txt-div p {
+    padding: 10px 28%;
+    font-size: 13px;
+  }
+  .sec2 .bottom-section .txt-div .link-div {
+    margin-top: -10px;
+    margin-bottom: -30px;
+  }
+  .sec2 .bottom-section .txt-div .link-div .txt-link {
+    font-size: 11px;
+    margin-bottom: -10px;
+  }
+  .sec2 .bottom-section .txt-div .link-div a .icon-arrow {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    margin-right: -2px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div {
+    width: 330px;
+    height: 190px;
+    margin: 85px auto;
+    padding: 25px 15px 25px 30px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .icon-quote {
+    width: 12px;
+    height: 14px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div p {
+    font-size: 10px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div {
+    margin-top: 10px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-img {
+    width: 30px;
+    height: 30px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div {
+    margin-left: 10px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div h3 {
+    font-size: 9px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div p {
+    font-size: 6.5px;
+    font-weight: 500;
+  }
+  .sec3 {
+    padding: 60px 60px;
+    height: 530px;
+  }
+  .sec3 .txt-div h2 {
+    padding-bottom: 5px;
+    font-size: 17px;
+  }
+  .sec3 .txt-div p {
+    padding: 0 26%;
+    font-size: 12px;
+  }
+  .sec3 .input-div input {
+    width: 300px;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 11px;
+  }
+  .sec3 .input-div input::placeholder {
+    font-size: 11px;
+  }
+  .sec3 .input-div .error-msg {
+    font-size: 11px;
+    align-self: flex-start;
+  }
+  .sec3 .input-div button {
+    width: 300px;
+    height: 40px;
+    font-size: 10px;
+  }
+  footer {
+    height: 920px;
+    padding: 100px 40px;
+  }
+  footer .footer-logo-mobile {
+    width: 27%;
+  }
+  footer .phone-div,
+  .email-div {
+    margin-left: 10px;
+  }
+  footer .phone-div {
+    margin-top: 50px;
+  }
+  footer .email-div {
+    margin-top: 30px;
+  }
+  footer .phone-div .icon-phone,
+  .icon-email {
+    width: 20px;
+    height: 17px;
+  }
+  footer .phone-div .phone-para,
+  .email-div .email-para {
+    margin-left: 25px;
+    font-size: 16px;
+  }
+  footer .final-footer-div {
+    margin-top: 90px;
+    margin-left: 10px;
+  }
+  footer .final-footer-div div a {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  footer .final-footer-div .div2 .contact-us-para {
+    margin-top: 50px;
+  }
+  footer .footer-logo div {
+    width: 33px;
+    height: 33px;
+  }
+  footer .footer-logo .facebook-div a {
+    width: 9px;
+    height: 9px;
+  }
+  footer .footer-logo .twitter-div a {
+    width: 12px;
+    height: 14px;
+  }
+  footer .footer-logo .instagram-div a {
+    width: 18px;
+    height: 18px;
+    margin-top: 6px;
+  }
+}
+/* ==================================================================================================================================== */
+/* Mobile x-large & Tablet - 750px */
+@media (min-width: 750px) and (max-width: 1023px) {
+  body {
+    padding: 0;
+  }
+  nav {
+    padding: 30px 50px 0;
+  }
+  nav img {
+    width: 13%;
+  }
+  nav p {
+    font-size: 16px;
+  }
+  nav .para1 {
+    padding-left: 55%;
+  }
+  .sec1 {
+    padding: 0 50px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+  .sec1 .img-div img {
+    width: 50%;
+  }
+  .sec1 .txt-div h1 {
+    font-size: 33px;
+    padding: 20px 20% 0;
+  }
+  .sec1 .txt-div p {
+    padding: 5px 22%;
+    font-size: 20px;
+  }
+  .sec1 .txt-div input {
+    width: 55%;
+    height: 20px;
+    padding: 27px;
+    font-size: 16px;
+  }
+  .sec1 .txt-div input::placeholder {
+    font-size: 16px;
+  }
+  .sec1 .txt-div .error-msg {
+    font-size: 12px;
+    width: fit-content;
+    padding-left: 22.5%;
+  }
+  .sec1 .txt-div button {
+    width: 55%;
+    height: 56px;
+    font-size: 18px;
+  }
+  .sec2 .bottom-section .img-div img {
+    width: 50%;
+  }
+  .sec2 .bottom-section {
+    height: 1240px;
+  }
+  .sec2 .bottom-section .txt-div h1 {
+    padding-top: 20px;
+    font-size: 22px;
+  }
+  .sec2 .bottom-section .txt-div p {
+    padding: 10px 26%;
+    font-size: 19px;
+  }
+  .sec2 .bottom-section .txt-div .link-div {
+    margin-top: -10px;
+    margin-bottom: -30px;
+  }
+  .sec2 .bottom-section .txt-div .link-div .txt-link {
+    font-size: 16px;
+    padding-bottom: 2px;
+  }
+  .sec2 .bottom-section .txt-div .link-div a .icon-arrow {
+    width: 25px;
+    height: 25px;
+    margin-left: 8px;
+    margin-right: -5px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div {
+    width: 375px;
+    height: 240px;
+    margin: 85px auto;
+    padding: 30px 20px 30px 35px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .icon-quote {
+    width: 14px;
+    height: 18px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div p {
+    font-size: 12.8px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div {
+    margin-top: 15px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-img {
+    width: 32px;
+    height: 32px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div {
+    margin-left: 10px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div h3 {
+    font-size: 12px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div p {
+    font-size: 8px;
+    font-weight: 500;
+  }
+  .sec3 {
+    padding: 60px 60px;
+    height: 490px;
+  }
+  .sec3 .txt-div h2 {
+    padding-bottom: 5px;
+    font-size: 25px;
+    font-family: "Raleway-VariableFont";
+  }
+  .sec3 .txt-div p {
+    padding: 0 25%;
+    font-size: 18.5px;
+  }
+  .sec3 .input-div input {
+    width: 312px;
+    max-width: 312px;
+    padding: 14px;
+    font-size: 14px;
+  }
+  .sec3 .input-div input::placeholder {
+    font-size: 14px;
+  }
+  .sec3 .input-div .error-msg {
+    font-size: 12px;
+    padding-top: 3px;
+  }
+  .sec3 .input-div button {
+    width: 312px;
+    max-width: 312px;
+    height: 43px;
+    font-size: 13px;
+  }
+  footer {
+    padding: 80px 50px;
+  }
+  footer .footer-logo-mobile {
+    width: 30%;
+  }
+  footer .phone-div,
+  .email-div {
+    margin-left: 10px;
+  }
+  footer .phone-div {
+    margin-top: 50px;
+  }
+  footer .email-div {
+    margin-top: 30px;
+  }
+  footer .phone-div .icon-phone,
+  .icon-email {
+    width: 25px;
+    height: 22px;
+  }
+  footer .phone-div .phone-para,
+  .email-div .email-para {
+    margin-left: 25px;
+    font-size: 20px;
+  }
+  footer .final-footer-div {
+    margin-top: 90px;
+    margin-left: 10px;
+  }
+  footer .final-footer-div div a {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  footer .final-footer-div .div2 .contact-us-para {
+    margin-top: 50px;
+  }
+  footer .footer-logo {
+    margin-top: 30px;
+  }
+  footer .footer-logo .facebook-div,
+  .twitter-div {
+    margin-right: 15px;
+  }
+  footer .footer-logo div {
+    width: 37px;
+    height: 37px;
+  }
+  footer .footer-logo .facebook-div a {
+    width: 11px;
+    height: 18px;
+  }
+  footer .footer-logo .twitter-div a {
+    width: 17px;
+    height: 18px;
+  }
+  footer .footer-logo .instagram-div a {
+    width: 23px;
+    height: 23px;
+    margin-top: 6px;
+  }
+}
+/* ==================================================================================================================================== */
+/* 
+Common Properties
+Laptop [1024px + 1440px]
+*/
+@media (min-width: 1024px) {
+  body {
+    height: 2335px;
+  }
+  .sec1 {
+    flex-direction: row-reverse;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+  .sec1 div {
+    width: 50%;
+  }
+  .sec1 .txt-div h1 {
+    font-weight: 700;
+    line-height: 155%;
+    font-family: "Raleway-Bold";
+  }
+  .sec1 .txt-div p {
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+  .sec1 .txt-div form {
+    width: 100%;
+    margin-top: 22px;
+    flex-wrap: nowrap;
+    position: relative;
+    justify-content: flex-start;
+  }
+  .sec1 .txt-div input {
+    border-radius: 3px;
+    border: 0.1px solid #000;
+  }
+  .sec1 .txt-div input::placeholder {
+    font-family: "OpenSans-VariableFont";
+  }
+  .sec1 .txt-div .error-msg {
+    order: 3;
+    display: block;
+    margin-top: 5px;
+  }
+  .sec1 .txt-div button {
+    order: 2;
+    font-weight: 400;
+    border-radius: 3px;
+    letter-spacing: 0.05em;
+    margin-left: 20px;
+  }
+  .sec1 .img-div img {
+    width: 100%;
+    padding-left: 100px;
+    padding-top: 50px;
+    align-self: flex-end;
+  }
+  .sec2 .top-section .sec2-bg-desktop {
+    width: 100%;
+    display: block;
+  }
+  .sec2 .top-section .sec2-bg-mobile {
+    display: none;
+  }
+  .sec2 .bottom-section {
+    display: flex;
+    height: 700px;
+    margin-top: -10px;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    background-color: hsl(240, 75%, 98%);
+  }
+  .sec2 .bottom-section div {
+    width: 50%;
+  }
+  .sec2 .bottom-section .txt-div p {
+    color: hsl(243, 87%, 12%);
+  }
+  .sec2 .bottom-section .txt-div .link-div {
+    border-bottom: 1.5px solid hsl(170, 45%, 43%);
+  }
+  .sec2 .bottom-section .img-div img {
+    width: 100%;
+  }
+  .sec3 {
+    flex-direction: row;
+  }
+  .sec3 div {
+    width: 50%;
+    justify-content: center;
+  }
+  .sec3 .txt-div,
+  .input-div {
+    width: 50%;
+    align-items: flex-start;
+  }
+  .sec3 .txt-div h2 {
+    font-weight: 630;
+    width: fit-content;
+    letter-spacing: 0.5px;
+    font-family: "Raleway-VariableFont";
+  }
+  .sec3 .txt-div p {
+    font-weight: 350;
+    font-family: "OpenSans-VariableFont";
+  }
+  .sec3 .input-div form {
+    width: 100%;
+    flex-direction: column;
+  }
+  .sec3 .input-div .error-msg {
+    font-weight: lighter;
+    letter-spacing: 0.8px;
+  }
+  .sec3 .input-div button {
+    font-weight: 600;
+    text-wrap: nowrap;
+    letter-spacing: 0.4px;
+    font-family: "Raleway-VariableFont";
+  }
+  footer {
+    position: relative;
+    height: 480px;
+    color: hsl(240, 75%, 98%);
+    font-family: "OpenSans-VariableFont";
+  }
+  footer .footer-logo-mobile,
+  .left-div {
+    position: absolute;
+  }
+  footer .left-div div {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .final-footer-div {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+  }
+  footer .final-footer-div .div1,
+  .div2 {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .final-footer-div {
+    text-transform: capitalize;
+  }
+  footer .final-footer-div .div1 a,
+  .div2 a {
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: hsl(240, 75%, 98%);
+  }
+  footer .final-footer-div .div1 a:hover,
+  footer .final-footer-div .div2 a:hover {
+    color: hsl(238, 62%, 74%);
+  }
+  footer .footer-logo {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  footer .footer-logo div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid hsl(240, 75%, 98%);
+  }
+  footer .footer-logo div:hover {
+    cursor: pointer;
+    border-color: hsl(238, 62%, 74%);
+  }
+  footer .footer-logo div path:hover {
+    fill: hsl(238, 62%, 74%);
+  }
+}
+/* ==================================================================================================================================== */
+/* Laptop Small - 1024px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  body {
+    padding: 0;
+  }
+  nav {
+    padding: 50px 70px 0;
+  }
+  nav .head-logo {
+    width: 180px;
+  }
+  nav p {
+    font-size: 19px;
+    font-weight: 430;
+  }
+  nav .para1 {
+    padding-left: 50%;
+  }
+  .sec1 {
+    padding: 0 70px;
+    flex-wrap: nowrap;
+  }
+  .sec1 .txt-div h1 {
+    font-size: 40px;
+  }
+  .sec1 .txt-div p {
+    font-size: 17px;
+    margin-top: -15px;
+  }
+  .sec1 .txt-div form {
+    position: relative;
+  }
+  .sec1 .txt-div input {
+    width: 55%;
+    max-width: 55%;
+    height: 20px;
+    padding: 20px;
+    font-size: 13px;
+  }
+  .sec1 .txt-div input::placeholder {
+    font-size: 13px;
+  }
+  .sec1 .txt-div .error-msg {
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+  }
+  .sec1 .txt-div button {
+    width: 190px;
+    max-width: 190px;
+    height: 41px;
+    font-size: 13px;
+  }
+  .sec2 .bottom-section {
+    padding: 0 70px;
+  }
+  .sec2 .bottom-section .txt-div h1 {
+    font-size: 40px;
+    text-wrap: nowrap;
+  }
+  .sec2 .bottom-section .txt-div p {
+    font-size: 16px;
+    margin-top: 8px;
+    padding-right: 60px;
+    margin-bottom: 8px;
+  }
+  .sec2 .bottom-section .txt-div .link-div .txt-link {
+    font-size: 16px;
+  }
+  .sec2 .bottom-section .txt-div .link-div a .icon-arrow {
+    margin-top: 3px;
+    margin-left: 7px;
+  }
+  .sec2 .bottom-section .txt-div .link-div a {
+    margin-bottom: 2px;
+  }
+  .sec2 .bottom-section .txt-div .link-div a .icon-arrow {
+    width: 18px;
+    height: 18px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div {
+    width: 380px;
+    height: 230px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    justify-content: flex-start;
+    padding: 30px 40px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .icon-quote {
+    width: 14px;
+    height: 18px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div p {
+    padding: 0;
+    font-size: 13px;
+    line-height: 180%;
+    margin-top: -10px;
+    letter-spacing: 0.8px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div {
+    margin-top: 15px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-img {
+    width: 30px;
+    height: 30px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div {
+    margin-left: 10px;
+    text-wrap: nowrap;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div h3 {
+    font-size: 11.5px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div p {
+    font-size: 9px;
+    margin-top: 2px;
+  }
+  .sec2 .bottom-section .img-div img {
+    padding-top: 130px;
+    padding-left: 100px;
+  }
+  .sec3 {
+    padding: 70px 70px;
+    height: 320px;
+  }
+  .sec3 .txt-div h2 {
+    font-size: 33px;
+  }
+  .sec3 .txt-div p {
+    font-size: 17px;
+    padding-right: 85px;
+  }
+  .sec3 .input-div form {
+    padding-left: 100px;
+    padding-top: 45px;
+  }
+  .sec3 .input-div input {
+    width: 95%;
+    max-width: 95%;
+    height: 40px;
+    padding: 25px;
+    font-size: 13px;
+  }
+  .sec3 .input-div input::placeholder {
+    font-size: 13px;
+  }
+  .sec3 .input-div .error-msg {
+    font-size: 12px;
+    margin-top: 3px;
+  }
+  .sec3 .input-div button {
+    width: 40%;
+    max-width: 40%;
+    height: 48px;
+    font-size: 13px;
+  }
+  footer {
+    height: 520px;
+  }
+  footer .footer-logo-mobile {
+    width: 13%;
+    top: 100px;
+    left: 70px;
+  }
+  footer .phone-div {
+    margin-top: 20px;
+  }
+  footer .email-div {
+    margin-top: 25px;
+  }
+  footer .phone-div .icon-phone,
+  .icon-email {
+    width: 20px;
+    height: 16px;
+    margin-top: 2px;
+  }
+  footer .phone-div .phone-para,
+  .email-div .email-para {
+    margin-left: 20px;
+    font-size: 17px;
+  }
+  footer .left-div {
+    top: 180px;
+    left: 75px;
+  }
+  footer .final-footer-div {
+    top: 200px;
+    left: 38%;
+    position: relative;
+  }
+  footer .final-footer-div .div1 a,
+  .div2 a {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  footer .final-footer-div .div2 {
+    position: absolute;
+    left: 20%;
+  }
+  footer .footer-logo {
+    position: absolute;
+    left: 40%;
+    width: 135px;
+    height: 30px;
+  }
+  footer .footer-logo div {
+    width: 30px;
+    height: 30px;
+    border-width: 1px;
+  }
+  footer .footer-logo .facebook-div a {
+    width: 9.8px;
+    height: 18px;
+  }
+  footer .footer-logo .twitter-div a {
+    width: 12.5px;
+    height: 21px;
+  }
+  footer .footer-logo .instagram-div a {
+    width: 17px;
+    height: 18px;
+  }
+}
+/* ==================================================================================================================================== */
+/* Laptop Large - 1440px */
+@media (min-width: 1440px) {
+  body {
+    padding: 0;
+  }
+  nav {
+    padding: 60px 80px 0;
+  }
+  nav .head-logo {
+    width: 190px;
+  }
+  nav p {
+    font-size: 20px;
+    font-weight: 430;
+  }
+  nav .para1 {
+    padding-left: 700px;
+  }
+  nav .para2,
+  .para3 {
+    padding-left: 60px;
+  }
+  .sec1 {
+    padding: 0 80px;
+  }
+  .sec1 .txt-div h1 {
+    font-size: 43px;
+  }
+  .sec1 .txt-div p {
+    font-size: 18px;
+    margin-top: -20px;
+  }
+  .sec1 .txt-div input {
+    width: 55%;
+    max-width: 55%;
+    height: 23px;
+    padding: 23px;
+    font-size: 14px;
+  }
+  .sec1 .txt-div input::placeholder {
+    font-size: 14px;
+  }
+  .sec1 .txt-div .error-msg {
+    font-size: 13px;
+    position: absolute;
+    left: 0;
+    top: 48px;
+  }
+  .sec1 .txt-div button {
+    width: 215px;
+    max-width: 215px;
+    height: 48px;
+    font-size: 14px;
+  }
+  .sec2 .bottom-section {
+    padding: 0 80px;
+  }
+  .sec2 .bottom-section .txt-div h1 {
+    font-size: 43px;
+    text-wrap: nowrap;
+  }
+  .sec2 .bottom-section .txt-div p {
+    font-size: 18px;
+    margin-top: 10px;
+    padding-right: 60px;
+    margin-bottom: 10px;
+  }
+  .sec2 .bottom-section .txt-div .link-div .txt-link {
+    font-size: 17.5px;
+  }
+  .sec2 .bottom-section .txt-div .link-div a .icon-arrow {
+    margin-top: 5px;
+    margin-left: 7px;
+  }
+  .sec2 .bottom-section .txt-div .link-div a {
+    margin-bottom: 3px;
+  }
+  .sec2 .bottom-section .txt-div .link-div a .icon-arrow {
+    width: 18px;
+    height: 18px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div {
+    width: 400px;
+    height: 230px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    justify-content: flex-start;
+    padding: 30px 40px 30px 40px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .icon-quote {
+    width: 17px;
+    height: 30px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div p {
+    padding: 0;
+    font-size: 14px;
+    line-height: 180%;
+    margin-top: -10px;
+    letter-spacing: 0.8px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div {
+    margin-top: 15px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-img {
+    width: 35px;
+    height: 35px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div {
+    margin-left: 10px;
+    text-wrap: nowrap;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div h3 {
+    font-size: 12.5px;
+  }
+  .sec2 .bottom-section .txt-div .quote-div .avatar-div .info-div p {
+    font-size: 10px;
+    margin-top: 2px;
+  }
+  .sec2 .bottom-section .img-div img {
+    padding-top: 100px;
+    padding-left: 100px;
+  }
+  .sec3 {
+    padding: 70px 80px;
+    height: 320px;
+  }
+  .sec3 .txt-div h2 {
+    font-size: 35px;
+  }
+  .sec3 .txt-div p {
+    font-size: 18px;
+    padding-right: 100px;
+  }
+  .sec3 .input-div form {
+    padding-left: 100px;
+    padding-top: 45px;
+  }
+  .sec3 .input-div input {
+    width: 96%;
+    max-width: 96%;
+    height: 50px;
+    padding: 28px;
+    font-size: 14px;
+  }
+  .sec3 .input-div input::placeholder {
+    font-size: 14px;
+  }
+  .sec3 .input-div .error-msg {
+    font-size: 13.5px;
+    margin-top: 3px;
+  }
+  .sec3 .input-div button {
+    width: 40%;
+    max-width: 40%;
+    height: 50px;
+    font-size: 14.8px;
+  }
+  footer .footer-logo-mobile {
+    width: 14%;
+    top: 100px;
+    left: 80px;
+  }
+  footer .phone-div,
+  .email-div {
+    margin-left: 7px;
+  }
+  footer .phone-div {
+    margin-top: 20px;
+  }
+  footer .email-div {
+    margin-top: 25px;
+  }
+  footer .phone-div .icon-phone,
+  .icon-email {
+    width: 21px;
+    height: 17px;
+    margin-top: 2px;
+  }
+  footer .phone-div .phone-para,
+  .email-div .email-para {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  footer .left-div {
+    top: 180px;
+    left: 80px;
+  }
+  footer .final-footer-div {
+    top: 200px;
+    left: 600px;
+  }
+  footer .final-footer-div .div1 a,
+  .div2 a {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  footer .final-footer-div .div2 {
+    margin-left: 200px;
+  }
+  footer .footer-logo {
+    left: 580px;
+    width: 150px;
+    height: 35px;
+  }
+  footer .footer-logo .facebook-div,
+  .twitter-div {
+    margin-right: 5px;
+  }
+  footer .footer-logo div {
+    width: 35px;
+    height: 35px;
+  }
+  footer .footer-logo .facebook-div a {
+    width: 10.8px;
+    height: 19px;
+  }
+  footer .footer-logo .twitter-div a {
+    width: 14.5px;
+    height: 18px;
+  }
+  footer .footer-logo .instagram-div a {
+    width: 18px;
+    height: 20px;
+  }
+}
+/* ==================================================================================================================================== */
+
+/* 
+        Flexible Box
+        ************
+        For Parent
+        **********
+        - display: flex => To Start Flexible Box
+        - flex-direction: row [Default Value] || row-reverse || column || column-reverse
+        - flex-wrap: nowrap [Default Value] || wrap || wrap-reverse
+        - flex-flow: [flex-direction] + [flex-wrap]
+        - justify-content: flex-start [Default Value] || flex-end || center || space-between 
+        || space-around || space-evenly [space-between] + [space-around]
+        - align-items: stretch [Default Value] || flex-start || center || flex-end
+        - align-content: stretch [Default Value] || flex-start || flex-end || center || space-between 
+        || space-around || space-evenly [space-between] + [space-around]
+        =============================================================================================
+        For Child
+        *********
+        - flex-grow:   0 [Default Value] || 1 || 2 ....
+        - flex-shrink: 1 [Default Value] || 2 || 3 ....
+        - order:  1 || 2 ....
+        - flex-basis: auto [Default Value] || width [respect max-width] || height
+        - align-self: stretch [Default Value] || flex-start || center || flex-end
+        - Flex Shorthand => flex: [flex-grow] + [flex-shrink] + [flex-basis] : 0 1 auto [Default Values]
+    */
