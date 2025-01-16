@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Frontend Mentor Solution URL: (https://www.frontendmentor.io/solutions/huddle-landing-page-with-curved-sections-master-solution-DUocxPPoZ8)
-- Live Site URL: ( https://noura201.github.io/Frontend_Mentor_04_fylo-landing-page-with-two-column-layout-master_challenge/)
+- Frontend Mentor Solution URL: (https://www.frontendmentor.io/solutions/fylo-landing-page-with-two-column-layout-master-challenge-bcZ1l6UKsc)
+- Live Site URL: (https://noura201.github.io/Frontend_Mentor_04_fylo-landing-page-with-two-column-layout-master_challenge/)
 - Github Repo URL: (https://github.com/Noura201/Frontend_Mentor_04_fylo-landing-page-with-two-column-layout-master_challenge.git)
 
 ## My process
