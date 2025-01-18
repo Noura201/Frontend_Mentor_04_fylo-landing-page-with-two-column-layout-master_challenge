@@ -525,7 +525,7 @@ Mobile [320px + 375px + 425px]
   }
   .sec2 .bottom-section .txt-div .quote-div {
     width: 175px;
-    height: 150px;
+    height: 80px;
     margin: 85px auto;
     padding: 15px 10px 15px 15px;
   }
@@ -647,6 +647,9 @@ Mobile [320px + 375px + 425px]
     width: 12px;
     height: 12px;
     margin-top: 2.5px;
+  }
+  footer {
+    background-color: red;
   }
 }
 /* ==================================================================================================================================== */
