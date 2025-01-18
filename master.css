@@ -525,7 +525,7 @@ Mobile [320px + 375px + 425px]
   }
   .sec2 .bottom-section .txt-div .quote-div {
     width: 175px;
-    height: 100px;
+    height: 120px;
     margin: 85px auto;
     padding: 15px 10px 15px 15px;
   }
@@ -534,7 +534,7 @@ Mobile [320px + 375px + 425px]
     height: 8px;
   }
   .sec2 .bottom-section .txt-div .quote-div p {
-    font-size: 5px;
+    font-size: 3px;
     margin-top: -15px;
   }
   .sec2 .bottom-section .txt-div .quote-div .avatar-div {
@@ -1891,29 +1891,3 @@ Laptop [1024px + 1440px]
     height: 20px;
   }
 }
-/* ==================================================================================================================================== */
-
-/* 
-        Flexible Box
-        ************
-        For Parent
-        **********
-        - display: flex => To Start Flexible Box
-        - flex-direction: row [Default Value] || row-reverse || column || column-reverse
-        - flex-wrap: nowrap [Default Value] || wrap || wrap-reverse
-        - flex-flow: [flex-direction] + [flex-wrap]
-        - justify-content: flex-start [Default Value] || flex-end || center || space-between 
-        || space-around || space-evenly [space-between] + [space-around]
-        - align-items: stretch [Default Value] || flex-start || center || flex-end
-        - align-content: stretch [Default Value] || flex-start || flex-end || center || space-between 
-        || space-around || space-evenly [space-between] + [space-around]
-        =============================================================================================
-        For Child
-        *********
-        - flex-grow:   0 [Default Value] || 1 || 2 ....
-        - flex-shrink: 1 [Default Value] || 2 || 3 ....
-        - order:  1 || 2 ....
-        - flex-basis: auto [Default Value] || width [respect max-width] || height
-        - align-self: stretch [Default Value] || flex-start || center || flex-end
-        - Flex Shorthand => flex: [flex-grow] + [flex-shrink] + [flex-basis] : 0 1 auto [Default Values]
-    */
